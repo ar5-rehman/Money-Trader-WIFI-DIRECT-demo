@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App and Activities -->
+    <string name="app_name">Money Trader</string>
+
+    <!-- Menus -->
+    <string name="disconnect">Disconnect</string>
+
+    <!-- Buttons -->
+    <string name="go_to_settings_button">Go to Settings</string>
+    <string name="back_button">Back</string>
+    <string name="ok">OK</string>
+
+    <!-- TextView -->
+    <string name="go_to_settings_text">Click the image above to go to Settings and connect your device to others by Wifi-Direct</string>
+
+    <!-- EditTexts -->
+    <string name="set_username_name">Please choose your username and Balance</string>
+    <string name="enter_text">Enter your message here</string>
+
+    <!-- Descriptions -->
+    <string name="full_screen_image">Full screen image</string>
+    <string name="title_activity_username">Money Trading</string>
+    <string name="send_button">Send</string>
+
+</resources>

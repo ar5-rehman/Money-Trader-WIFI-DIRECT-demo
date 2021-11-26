@@ -1,0 +1,82 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/constraintLayout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+
+	<!--<ListView
+		android:id="@+id/messageList"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_marginTop="8dp"
+		app:layout_constraintBottom_toTopOf="@+id/sendMessage"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textView" />-->
+
+
+	<TextView
+		android:id="@+id/textView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="4dp"
+		android:text="Your Money"
+		android:textSize="40dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+	<TextView
+		android:id="@+id/moneyValue"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+
+		android:layout_marginTop="16dp"
+		android:text="0"
+		android:textSize="60dp"
+		app:layout_constraintEnd_toEndOf="@+id/textView"
+		app:layout_constraintStart_toStartOf="@+id/textView"
+		app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+	<EditText
+		android:id="@+id/editMessage"
+		android:layout_width="0dp"
+		android:layout_height="48dp"
+		android:layout_marginTop="8dp"
+		android:hint="@string/enter_text"
+		android:inputType="number"
+		android:maxLines="1"
+		app:layout_constraintEnd_toStartOf="@+id/sendMessage"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+	<Button
+		android:id="@+id/sendMessage"
+		android:layout_width="64dp"
+		android:layout_height="wrap_content"
+		android:text="@string/send_button"
+		android:textColor="@color/button_text"
+		app:layout_constraintBottom_toBottomOf="@+id/editMessage"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/editMessage" />
+
+	<android.support.constraint.Guideline
+		android:id="@+id/guideline"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		app:layout_constraintGuide_percent="0.10" />
+
+	<android.support.constraint.Guideline
+		android:id="@+id/guideline2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintGuide_percent="0.4"
+		app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>
+
